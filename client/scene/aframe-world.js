@@ -17,10 +17,7 @@ export async function markup(
       crossorigin: 'anonymous'
     }))
   scene(oom
-    .aScene({
-        renderer: 'antialias: true,
-                   colorManagement: true'
-        })
+    
     .aEntity({
       position: '0 0 0',
       geometry: 'primitive: plane; width: 10000; height: 10000;',
