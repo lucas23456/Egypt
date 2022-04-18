@@ -124,6 +124,7 @@ export function markup(
     .aEntity({
       id: 'player',
       movementControls: 'constrainToNavMesh: true; speed:0.2;',
+      navigator: 'cameraRig: #player; cameraHead: #head; collisionEntities: .collision; ignoreEntities: .clickable',
       networked: `template: #${pTemplate}; attachTemplateToLocal:false;`,
       position: '0 0 0',
       rotation: '0 0 0',
@@ -151,6 +152,7 @@ export function markup(
         viveControls: 'hand: left',
         oculusTouchControls: 'hand: left',
         windowsMotionControls: 'hand: left',
+        teleportControls: 'cameraRig: #player; teleportOrigin: #head; button: trigger; type: line; curveShootingSpeed: 18; landingMaxAngle: 60',
         visible: 'true'
       })
       .aEntity({
@@ -160,6 +162,9 @@ export function markup(
         viveControls: 'hand: right',
         oculusTouchControls: 'hand: right',
         windowsMotionControls: 'hand: right',
+        laserControls: true,
+        raycaster: 'showLine: true; far: 10; interval: 0; objects: .clickable, a-link;',
+        line: 'color: lawngreen; opacity: 0.5',
         visible: 'true'
       }))
 
