@@ -24,7 +24,7 @@ export async function markup(
       rotation: '-90 0 0',
       material: 'src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;'
     })
-    .aEntity({ light: 'color: #silver; intensity: 2; type: ambient;', visible: '' })
+    .aEntity({ light: 'color: #silver; intensity: 1; type: ambient;', visible: '' })
     /**.aEntity({ light: 'color: #ffaaff; intensity: 1.5', position: '5 5 5' })*/
     .aSky({ src: '#sky', rotation: '0 -90 0' }))
 
