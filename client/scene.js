@@ -52,10 +52,10 @@ export async function markup(/** @type {import("@notml/core").oom} */ oom) {
   const assets = oom.aAssets({ id: 'main-assets' })
   const scene = oom.aScene({
     id: 'main-scene',
-    renderer: 'antialias: true;
-                   // colorManagement: true;
-   //',
-    networkedScene: `room: ${room}; debug: false; adapter: easyrtc; audio: ${hasMic};`
+    // Добавил renderer
+    renderer: 'antialias: true; colorManagement: true;',
+             
+   networkedScene: `room: ${room}; debug: false; adapter: easyrtc; audio: ${hasMic};`
   }, assets)
 
   oom(window.document.body, scene)
