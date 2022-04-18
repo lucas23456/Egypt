@@ -10,5 +10,5 @@ export function markup(
     }))
   scene(oom
     .aEntity({ navMesh: true, gltfModel: '/scene/test-navmesh.gltf', position: '0 0 0'})
-    .aEntity({ gltfModel: '#art-gallery-cage', position: '0 0 0'}))
+    .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 0'}))
 }
