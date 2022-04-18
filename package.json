@@ -1,0 +1,30 @@
+{
+  "name": "vr-online-gallery",
+  "description": "VR online Gallery — PortalVR",
+  "type": "module",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1",
+    "open-easyrtc": "github:open-easyrtc/open-easyrtc#socket.io-4"
+  },
+  "devDependencies": {
+    "@nodutilus/project-config": "latest",
+    "@notml/core": "latest",
+    "@material/mwc-top-app-bar-fixed": "^0.25.3",
+    "@material/mwc-select": "^0.25.3",
+    "@material/mwc-textfield": "^0.25.3",
+    "@material/mwc-button": "0.25.3",
+    "@material/mwc-fab": "^0.25.3"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "url": "github:IgorNovozhilov/vr-online-gallery"
+  },
+  "license": "Unlicense"
+}

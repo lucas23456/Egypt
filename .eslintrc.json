@@ -1,0 +1,21 @@
+{
+  "extends": "@nodutilus",
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "./client/**"
+      ],
+      "env": {
+        "browser": true,
+        "node": false
+      }
+    }
+  ],
+  "rules": {
+    "jsdoc/require-jsdoc": 0
+  }
+}
