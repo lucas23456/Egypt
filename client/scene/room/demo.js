@@ -6,7 +6,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'art-gallery-cage',
-      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/magaz_101.glb?v=1650464486708'
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/magaz_svet.glb?v=1650465986548'
     }))
   scene(oom
     .aEntity({ gltfModel: '#art-gallery-cage', position: '0 -1.5 0', rotation: '0 180 0', scale: '0.1 0.1 0.1'}))
