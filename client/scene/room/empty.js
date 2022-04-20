@@ -12,8 +12,9 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'HallDeconstruct',
-      src: 'https://cdn.glitch.global/3e6dd8ed-0bf6-4a7d-8574-aa334f54fe16/DeconstructHallGrndBlack.glb?v=1649965055990'
+      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/scene.glb?v=1650445951819'
     })
+         
   .aAssetItem({
       id: 'Glass',
       src: 'https://cdn.glitch.global/3e6dd8ed-0bf6-4a7d-8574-aa334f54fe16/GlassHall2.glb?v=1649960366473'
