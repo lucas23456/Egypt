@@ -8,12 +8,12 @@ export async function markup(
   assets(oom
     .img({
       id: 'grid',
-      src: 'https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png',
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/1626899640_22-kartinkin-com-p-plitka-romb-tekstura-krasivo-23.jpg?v=1650445835764',
       crossorigin: 'anonymous'
     })
     .img({
       id: 'sky',
-      src: 'https://cdn.glitch.global/3e6dd8ed-0bf6-4a7d-8574-aa334f54fe16/SkySpace3.jpg?v=1649224181565',
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/Epic_BlueSunset_EquiRect_flat.png?v=1650445438016',
       crossorigin: 'anonymous'
     }))
   scene(oom
