@@ -17,7 +17,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'model-pegasvr',
-      src: '/scene/models/SlavaAvatar.glb'
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/avatar.glb?v=1650449827694'
     })
     .template({ id: 'pegasvr-template' }, oom
       .aEntity({ class: 'avatar', networkedAudioSource: true }))
@@ -26,9 +26,9 @@ export function markup(
         .aEntity({ class: 'nametag', text: 'value: name; align:center;', position: '0 0.8 0', rotation: '0 180 0', scale: '8 8 8' })
         .aEntity({
           gltfModel: '#model-pegasvr',
-          position: '0 0 0',
+          position: '0 -1.5 0
           rotation: '0 180 0',
-          scale: '0.45 0.5 0.4'
+          scale: '0.4 0.4 0.4'
         })))
     .template({ id: 'artist-template' }, oom
       .aEntity({ class: 'avatar', networkedAudioSource: true }))
