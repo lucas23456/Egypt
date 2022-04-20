@@ -25,9 +25,9 @@ export function markup(
   
   scene(oom
     .aEntity({ navMesh: true, gltfModel: '/scene/hall-navmesh.gltf', visible: false, position: '0 0 0', scale: '2 2 2'})
-    .aEntity({ gltfModel: '#HallDeconstruct', position: '0 -1 4', scale: '2 2 2' })
-  .aEntity({ gltfModel: '#Glass', position: '0 -1 0', scale: '2 2 2'})
-  .aEntity({ gltfModel: '#Nft', position: '0 0,1 0', rotation: '0 180 0'}))
+    .aEntity({ gltfModel: '#HallDeconstruct', position: '0 0 4', scale: '2 2 2' })
+  .aEntity({ gltfModel: '#Glass', position: '0 -0.5 0', scale: '2 2 2'})
+  .aEntity({ gltfModel: '#Nft', position: '0 -1.5 0', rotation: '0 180 0', scale: '2 2 2'}))
   
   
   
