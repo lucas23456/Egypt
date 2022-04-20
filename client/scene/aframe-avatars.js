@@ -26,7 +26,7 @@ export function markup(
         .aEntity({ class: 'nametag', text: 'value: name; align:center;', position: '0 0.8 0', rotation: '0 180 0', scale: '8 8 8' })
         .aEntity({
           gltfModel: '#model-pegasvr',
-          position: '0 -1.5 0
+          position: '0 -1.5 0',
           rotation: '0 180 0',
           scale: '0.4 0.4 0.4'
         })))
