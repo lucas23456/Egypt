@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'HallDeconstruct',
-      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ArtGalleryCAGE.glb?v=1650463053948'
+      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/CityModern.glb?v=1650532565594'
     })
   .aAssetItem({
       id: 'Glass',
@@ -25,7 +25,7 @@ export function markup(
   
   scene(oom
     .aEntity({ navMesh: true, gltfModel: '/scene/hall-navmesh.gltf', visible: false, position: '0 0 0', scale: '2 2 2'})
-    .aEntity({ gltfModel: '#HallDeconstruct', position: '-18 0 -12', scale: '1 1 1' })
+    .aEntity({ gltfModel: '#HallDeconstruct', position: '-18 -3 -12', scale: '1 1 1' })
   .aEntity({ gltfModel: '#Glass', position: '0 -0.5 0', scale: '2 2 2'})
   .aEntity({ gltfModel: '#Nft', position: '0 -1.5 0', rotation: '0 180 0', scale: '2 2 2'}))
   
