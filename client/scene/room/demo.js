@@ -5,9 +5,9 @@ export function markup(
 ) {
   assets(oom
     .aAssetItem({
-      id: 'art-gallery-cage',
+      id: 'Multiverse',
       src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/Multiverse - 20.04.22.glb?v=1650548839027'
     }))
   scene(oom
-    .aEntity({ gltfModel: '#art-gallery-cage', position: '0 0 0', rotation: '0 180 0', scale: '0.3 0.3 0.3'}))
+    .aEntity({ gltfModel: '#Multiverse', position: '0 0 0', rotation: '0 180 0', scale: '1 1 1'}))
 }
