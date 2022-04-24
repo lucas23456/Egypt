@@ -11,7 +11,7 @@ export function markup(
 {
   assets(oom
     .aAssetItem({
-      id: 'ArtGalleryCAGE',
+      id: 'ArtGalleryCAGE1',
       src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/untitled.glb?v=1650790963895'
     })
   .aAssetItem({
