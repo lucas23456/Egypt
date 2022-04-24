@@ -12,7 +12,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'ArtGalleryCAGE',
-      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/CityModern.glb?v=1650532565594'
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/shopping%20center.glb?v=1650789926055'
     })
   .aAssetItem({
       id: 'Glass',
