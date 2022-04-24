@@ -24,7 +24,7 @@ export function markup(
     }))
   
   scene(oom
-    .aEntity({ gltfModel: '#ArtGalleryCAGE', position: '-18 1 -15', scale: '1 1 1' })
+    .aEntity({ gltfModel: '#ArtGalleryCAGE', position: '-20 0 -15', scale: '1 1 1' })
   .aEntity({ gltfModel: '#Glass', position: '0 -0.5 0', scale: '2 2 2' , rotation: '0 90 0'})
   .aEntity({ gltfModel: '#Nft', position: '0 -1.5 0', rotation: '0 90 0', scale: '2 2 2'}))
   
