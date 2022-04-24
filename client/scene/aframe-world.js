@@ -8,7 +8,7 @@ export async function markup(
   assets(oom
     .img({
       id: 'grid',
-      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/photo5398096935962918761.jpg?v=1650447703827',
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/IMG_7524.PNG?v=1650788973718',
       crossorigin: 'anonymous'
     })
     .img({
