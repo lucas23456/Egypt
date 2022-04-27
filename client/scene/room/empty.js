@@ -22,10 +22,20 @@ export function markup(
       id: 'Nft',
       src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ArtGalleryCAGE.glb?v=1650463053948'
     }))
+   .aAssetItem({
+      id: 'Nft',
+      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ArtGalleryCAGE.glb?v=1650463053948'
+    }))
+   .aAssetItem({
+      id: 'Nft',
+      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ArtGalleryCAGE.glb?v=1650463053948'
+    }))
   
   scene(oom
     .aEntity({ gltfModel: '#ArtGalleryCAGE', position: '-20 0 -15', scale: '1 1 1' })
   .aEntity({ gltfModel: '#Glass', position: '0 -0.5 0', scale: '2 2 2' , rotation: '0 90 0'})
+  .aEntity({ gltfModel: '#Nft', position: '0 -1.5 0', rotation: '0 90 0', scale: '2 2 2'}))
+  .aEntity({ gltfModel: '#Nft', position: '0 -1.5 0', rotation: '0 90 0', scale: '2 2 2'}))
   .aEntity({ gltfModel: '#Nft', position: '0 -1.5 0', rotation: '0 90 0', scale: '2 2 2'}))
   
   
