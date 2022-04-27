@@ -11,7 +11,7 @@ export function markup(
 {
   assets(oom
     .aAssetItem({
-      id: 'ArtGalleryCAGE',
+      id: 'ArtGalleryCAGE1',
       src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/Folds.glb?v=1650962506200'
     })
   .aAssetItem({
@@ -20,7 +20,7 @@ export function markup(
     })
   .aAssetItem({
       id: 'Nft',
-      src: 'https://cdn.glitch.global/3e6dd8ed-0bf6-4a7d-8574-aa334f54fe16/NftPics.glb?v=1649239112623'
+      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ArtGalleryCAGE.glb?v=1650463053948'
     }))
   
   scene(oom
