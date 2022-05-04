@@ -5,9 +5,51 @@ export function markup(
 ) {
   assets(oom
     .aAssetItem({
-      id: 'Multiverse',
-      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/Multiverse%20-%20%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D1%83%D0%BC%2003.05.2022.glb?v=1651587631271'
+      id: 'ocean',
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ocean.glb?v=1651670165120'
+    })
+  .aAssetItem({
+      id: 'Glass1',
+      src: 'https://cdn.glitch.global/1119fe6d-80fd-45cd-8f05-86299c9ab3fb/GlassOuter.gltf?v=1651489219768'
+    })
+ .aAssetItem({
+      id: 'Collection',
+      src: 'https://cdn.glitch.me/9fc7b6f3-577d-4a75-acde-3ff7704c6420/collection.glb?v=1651670077530'
+    })
+.aAssetItem({
+      id: 'Level',
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/level.glb?v=1651670138755'
+    })
+.aAssetItem({
+      id: 'Transport',
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/transport.glb?v=1651670209084'
+    })
+.aAssetItem({
+      id: 'HallDeconstruct  ART21',
+      src: 'https://cdn.glitch.global/1119fe6d-80fd-45cd-8f05-86299c9ab3fb/HallDeconstruct%20%20ART2.gltf?v=1651489277304'
+    })
+.aAssetItem({
+      id: 'HallDeconstruct  212',
+      src: 'https://cdn.glitch.global/9bd64b90-825a-415c-9640-30f41c26196c/Villa%2029.04.22.glb?v=1651315100978'
+    })
+  .aAssetItem({
+      id: 'GlassInner1',
+      src: 'https://cdn.glitch.global/9bd64b90-825a-415c-9640-30f41c26196c/GlassOuter.gltf?v=1651321844801'
     }))
+  
   scene(oom
-    .aEntity({ gltfModel: '#Multiverse', position: '0 0 0', rotation: '0 180 0', scale: '1 1 1'}))
+  .aEntity({ navMesh: true, gltfModel: 'scene/hall-navmesh.gltf',visible: false, position: '0 -0.1 0', scale: '1.8 1.8 1.8'})
+  .aEntity({ id: 'FoldsMeshBuild', navMesh: true,  gltfModel: 'scene/test-navmesh.gltf', position: '0 -0.3 0', scale: '1.8 1.8 1.8'})
+  .aEntity({ gltfModel: '#ocean', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
+  .aEntity({ gltfModel: '#Collection', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
+  .aEntity({ gltfModel: '#Level', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
+  .aEntity({ gltfModel: '#Transport', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
+  .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:''})
+  .aEntity({ gltfModel: '#GlassInner', position: '0 0 0', scale: '1.8 1.8 1.8', enmapinner:''})
+  .aEntity({ gltfModel: '#HallDeconstruct 3D 2', position: '0 0 0', scale: '1.8 1.8 1.8', enmapinner:''})
+  .aEntity({ gltfModel: '#HallDeconstruct 3D 1', position: '0 0 0', scale: '1.8 1.8 1.8',enmapinner:'' }))
+  
+  
 }
+
+
