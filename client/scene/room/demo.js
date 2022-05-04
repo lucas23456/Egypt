@@ -39,7 +39,7 @@ export function markup(
   
   scene(oom
 
-  .aEntity({ gltfModel: '#ocean', position: '0 5 0', scale: '1 1 1', enmap:'' })
+  .aEntity({ gltfModel: '#ocean', position: '0 2 0', scale: '1 1 1', enmap:'' })
   .aEntity({ gltfModel: '#Collection', position: '0 0 0', scale: '1 1 1', enmap:'' })
   .aEntity({ gltfModel: '#Level', position: '0 0 0', scale: '1 1 1', enmap:'' })
   .aEntity({ gltfModel: '#Transport', position: '0 0 0', scale: '1 1 1', enmap:'' })
