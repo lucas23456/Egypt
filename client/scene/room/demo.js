@@ -6,7 +6,7 @@ export function markup(
   assets(oom
     .aAssetItem({
       id: 'ocean',
-      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ocean.glb?v=1651670165120'
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ocean.glb?v=1651671274337'
     })
   .aAssetItem({
       id: 'Building',
@@ -39,14 +39,14 @@ export function markup(
   
   scene(oom
 
-  .aEntity({ gltfModel: '#ocean', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
-  .aEntity({ gltfModel: '#Collection', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
-  .aEntity({ gltfModel: '#Level', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
-  .aEntity({ gltfModel: '#Transport', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
-  .aEntity({ gltfModel: '#Building', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:''})
-  .aEntity({ gltfModel: '#GlassInner', position: '0 0 0', scale: '1.8 1.8 1.8', enmapinner:''})
-  .aEntity({ gltfModel: '#HallDeconstruct 3D 2', position: '0 0 0', scale: '1.8 1.8 1.8', enmapinner:''})
-  .aEntity({ gltfModel: '#HallDeconstruct 3D 1', position: '0 0 0', scale: '1.8 1.8 1.8',enmapinner:'' }))
+  .aEntity({ gltfModel: '#ocean', position: '0 5 0', scale: '1 1 1', enmap:'' })
+  .aEntity({ gltfModel: '#Collection', position: '0 0 0', scale: '1 1 1', enmap:'' })
+  .aEntity({ gltfModel: '#Level', position: '0 0 0', scale: '1 1 1', enmap:'' })
+  .aEntity({ gltfModel: '#Transport', position: '0 0 0', scale: '1 1 1', enmap:'' })
+  .aEntity({ gltfModel: '#Building', position: '0 0 0', scale: '1 1 1', enmap:''})
+  .aEntity({ gltfModel: '#GlassInner', position: '0 0 0', scale: '1 1 1', enmapinner:''})
+  .aEntity({ gltfModel: '#HallDeconstruct 3D 2', position: '0 0 0', scale: '1 1 1', enmapinner:''})
+  .aEntity({ gltfModel: '#HallDeconstruct 3D 1', position: '0 0 0', scale: '1 1 1',enmapinner:'' }))
   
   
 }
