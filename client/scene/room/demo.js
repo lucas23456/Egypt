@@ -9,8 +9,8 @@ export function markup(
       src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/ocean.glb?v=1651670165120'
     })
   .aAssetItem({
-      id: 'Glass1',
-      src: 'https://cdn.glitch.global/1119fe6d-80fd-45cd-8f05-86299c9ab3fb/GlassOuter.gltf?v=1651489219768'
+      id: 'Building',
+      src: 'https://cdn.glitch.global/9fc7b6f3-577d-4a75-acde-3ff7704c6420/Building.glb?v=1651671066479'
     })
  .aAssetItem({
       id: 'Collection',
@@ -38,13 +38,12 @@ export function markup(
     }))
   
   scene(oom
-  .aEntity({ navMesh: true, gltfModel: 'scene/hall-navmesh.gltf',visible: false, position: '0 -0.1 0', scale: '1.8 1.8 1.8'})
-  .aEntity({ id: 'FoldsMeshBuild', navMesh: true,  gltfModel: 'scene/test-navmesh.gltf', position: '0 -0.3 0', scale: '1.8 1.8 1.8'})
+
   .aEntity({ gltfModel: '#ocean', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
   .aEntity({ gltfModel: '#Collection', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
   .aEntity({ gltfModel: '#Level', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
   .aEntity({ gltfModel: '#Transport', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:'' })
-  .aEntity({ gltfModel: '#Glass', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:''})
+  .aEntity({ gltfModel: '#Building', position: '0 0 0', scale: '1.8 1.8 1.8', enmap:''})
   .aEntity({ gltfModel: '#GlassInner', position: '0 0 0', scale: '1.8 1.8 1.8', enmapinner:''})
   .aEntity({ gltfModel: '#HallDeconstruct 3D 2', position: '0 0 0', scale: '1.8 1.8 1.8', enmapinner:''})
   .aEntity({ gltfModel: '#HallDeconstruct 3D 1', position: '0 0 0', scale: '1.8 1.8 1.8',enmapinner:'' }))
