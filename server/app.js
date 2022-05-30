@@ -42,3 +42,7 @@ easyrtc.listen(app, socketServer, null, (err, rtcRef) => {
     appObj.events.defaultListeners.roomCreate(appObj, creatorConnectionObj, roomName, roomOptions, callback)
   })
 })
+
+app.get( '/', function( req, res ){
+res.render( 'scene/login.html' , { root:__dirname });
+});

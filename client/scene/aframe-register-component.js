@@ -1,4 +1,4 @@
-// @ts-ignore
+ // @ts-ignore
 window.AFRAME.registerComponent('random-color', {
   schema: {
     min: { default: { x: 0, y: 0, z: 0 }, type: 'vec3' },
