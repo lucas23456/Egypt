@@ -4,6 +4,7 @@ export async function markup(
 ) {
   const style = document.createElement('style')
 
+/*Стили*/
   style.innerHTML = `
     login-form .content { display: flex; flex-direction: column }
     login-form .login { display: flex; justify-content: flex-end }
