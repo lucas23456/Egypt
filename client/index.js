@@ -18,5 +18,5 @@
     })
   }
 
-  loadPage('home')
+  loadPage('login')
 })()
