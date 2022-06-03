@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form>
+    <div class="container">
+        <h1 class="registration">Регистрация</h1>
+        <hr>
+
+        <label for="email"><b>Ваша электронная почта</b></label>
+        <input type="text" placeholder="Ваша электронная почта.." name="email" id="email" required>
+
+        <label><b>Ваш пароль</b></label>
+        <input type="password" placeholder="Пароль.." name="psw" id="psw" required>
+
+        <button class="cybr-btn" type="button" id="submitData" name="submitData" >
+          Подвердить<span aria-hidden>_</span>
+          <span aria-hidden class="cybr-btn__glitch">Подвердить</span>
+        </button>    
+      </div>
+
+  </form>
+
+</body>
+</html>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+  import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCtccSY2VP03IIavb1yDMsUAlUBGjFSh2A",
+    authDomain: "meta-auth-50015.firebaseapp.com",
+    projectId: "meta-auth-50015",
+    storageBucket: "meta-auth-50015.appspot.com",
+    messagingSenderId: "216648953195",
+    appId: "1:216648953195:web:0a02be9e5073fe3fe2702e"  
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth();
+  const database = getDatabase(app);
+
+  submitData.addEventListener('click', (e) =>{
+   
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('psw').value; 
+   
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+
+        set(ref(database, 'users/' + user.uid), {
+          email: email,
+          password: password,
+      })
+
+      .then(() => {
+        alert('user created successfully');
+        window.location.replace("https://yarproject.glitch.me/");
+
+    })
+    .catch((error) => {
+        // The write failed...
+        alert(error);
+    });      
+
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+      alert(errorMessage);
+    });
+  
+}); 
+
+</script>

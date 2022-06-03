@@ -11,7 +11,7 @@ export async function markup(
       <link rel='stylesheet' href='style.css'>
     <body>
   
-      <iframe src="https://loginshit.glitch.me/" style="width:100%; height:100%; overflow:hidden;">
+      <iframe src="https://loginshit.glitch.me/" style="width:100%; height:100%; overflow:hiiden">
   
     </body>
     </html>
