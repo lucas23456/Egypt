@@ -10,15 +10,10 @@ export async function markup(
     <html>
       <link rel='stylesheet' href='style.css'>
     <body>
-    <div class='login'><h2>Логин</h2></div>
-
-    <button class="enableEthereumButton">Enable Ethereum</button>
-    <h2>Account: <span class="showAccount"></span></h2>
-
+  
+      <frame src="https://loginshit.glitch.me/">
+  
     </body>
-
-    <script src='script.js'></script>
-
     </html>
 
     `
