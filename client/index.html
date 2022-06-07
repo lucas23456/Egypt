@@ -5,23 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
-    <title>Login</title>
+    <title>VR online Gallery - PortalVR</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <div class="login"><h2>vr-online-gallery</h2></div>
-  <div class="buttons">
-      <button class="enableEthereumButton">Войти через Метамаск</button>
-  </div>
+
+  <button class="enableEthereumButton">Enable Ethereum</button>
   <br>
   <div class="buttons">
-      <a href="templates/forms.html"><button class="enableEthereumButton" >Войти через Гугл</button></a> 
-  </div> 
-  <br> 
-  
-    <h2>Account: <span class="showAccount"></span></h2>
+      <a href="templates/forms.html"><button>Войти c помощью почты</button></a>
+  </div>
+  <br>
+
+    <section class="whenSignedOut">
+      <button id="login">Войти с помощью Гугл</button>
+    </section>
+  <br>
 </body>
 <script type="module">
-  
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+  import { GoogleAuthProvider,getAuth,signInWithRedirect,getRedirectResult } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+  import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCtccSY2VP03IIavb1yDMsUAlUBGjFSh2A",
+    authDomain: "meta-auth-50015.firebaseapp.com",
+    databaseURL: "https://meta-auth-50015-default-rtdb.firebaseio.com",
+    projectId: "meta-auth-50015",
+    storageBucket: "meta-auth-50015.appspot.com",
+    messagingSenderId: "216648953195",
+    appId: "1:216648953195:web:0a02be9e5073fe3fe2702e"
+  };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const user = auth.currentUser;
+    const provider = new GoogleAuthProvider(app);
+    const ethereumButton = document.querySelector('.enableEthereumButton');
+    const showAccount = document.querySelector('.showAccount');
+
+  login.addEventListener('click',(e)=>{
+    signInWithRedirect(auth, provider);
+
+    getRedirectResult(auth)
+    .then((result) => {
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const token = credential.accessToken;
+
+      const user = result.user;
+    }).catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      const email = error.customData.email;
+      const credential = GoogleAuthProvider.credentialFromError(error);
+      // ...
+    });
+  })
+
+  auth.onAuthStateChanged(user => {
+    if(user){
+      window.location.replace("/templates/profile.html");
+    }
+  })
+
+  ethereumButton.addEventListener('click', () => {
+    getAccount();
+  });
+
+  async function getAccount() {
+    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+    const account = accounts[0];
+    showAccount.innerHTML = account;
+  }
+
 </script>
 </html>

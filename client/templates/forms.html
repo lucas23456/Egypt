@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Регистрация</title>
+  <title>VR online Gallery - PortalVR</title>
   <link rel="stylesheet" href="/styles/forms.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
         <button class="cybr-btn" type="button" id="submitData" name="submitData" >
           Подвердить<span aria-hidden>_</span>
           <span aria-hidden class="cybr-btn__glitch">Подвердить</span>
-        </button>    
+        </button>
       </div>
 
   </form>
@@ -41,7 +41,7 @@
     projectId: "meta-auth-50015",
     storageBucket: "meta-auth-50015.appspot.com",
     messagingSenderId: "216648953195",
-    appId: "1:216648953195:web:0a02be9e5073fe3fe2702e"  
+    appId: "1:216648953195:web:0a02be9e5073fe3fe2702e"
   };
 
   const app = initializeApp(firebaseConfig);
@@ -49,10 +49,10 @@
   const database = getDatabase(app);
 
   submitData.addEventListener('click', (e) =>{
-   
+
     var email = document.getElementById('email').value;
-    var password = document.getElementById('psw').value; 
-   
+    var password = document.getElementById('psw').value;
+
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
@@ -64,22 +64,19 @@
 
       .then(() => {
         alert('user created successfully');
-        window.location.replace("https://yarproject.glitch.me/redirect.html");
+        window.location.replace("/templates/profile.html");
 
     })
     .catch((error) => {
-        // The write failed...
-        alert(error);
-    });      
+        alert("somthing went wrong:(");
+    });
 
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      // ..
-      alert(errorMessage);
     });
-  
-}); 
+
+});
 
 </script>
