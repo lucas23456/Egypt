@@ -18,12 +18,6 @@
   </div>
   <br>
 
-    <section class="whenSignedOut">
-      <button id="login">Войти с помощью Гугл</button>
-    </section>
-  <br>
-</body>
-<script type="module">
 
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
   import { GoogleAuthProvider,getAuth,signInWithRedirect,getRedirectResult } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
@@ -46,8 +40,6 @@
     const ethereumButton = document.querySelector('.enableEthereumButton');
     const showAccount = document.querySelector('.showAccount');
 
-  login.addEventListener('click',(e)=>{
-    signInWithRedirect(auth, provider);
 
     getRedirectResult(auth)
     .then((result) => {
